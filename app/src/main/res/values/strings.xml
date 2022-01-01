@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GreenFlag</string>
+    <string name="create_an_account">Create an account</string>
+
+    <string name="greenflag_customers_can_create_an_account_to_access">GreenFlag customers can create an account to access</string>
+    <string name="car_health_updates">Car Health Updates</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="policy_information">Policy information</string>
+    <string name="request_a_rescue_online">Request a rescue online</string>
+    <string name="todo">TODO</string>
+</resources>
