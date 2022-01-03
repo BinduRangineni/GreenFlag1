@@ -32,17 +32,17 @@
         android:layout_width="360dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:text="Email address"
+        android:text="@string/email_address"
         android:textAlignment="gravity"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/editTextTextEmailAddress2"
+        app:layout_constraintBottom_toTopOf="@id/EditEmail2"
         app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="66dp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/EditEmail2"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -52,25 +52,53 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="89dp" />
-
+        tools:layout_editor_absoluteY="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6" />
+    <EditText
+        android:id="@+id/RedEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        android:backgroundTint="#A31111"
+        android:textColor="#A31111"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6" />
+    <EditText
+        android:id="@+id/GreenEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        android:backgroundTint="#16A311"
+        android:textColor="#16A311"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"  />
     <TextView
         android:id="@+id/textView6"
         android:layout_width="360dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:text="Create password"
+        android:text="@string/create_password"
         android:textAlignment="gravity"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@id/EditPassword2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/EditPassword2"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -78,29 +106,56 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="See criteria below"
+        android:hint="@string/see_criteria_below"
         app:layout_constraintBottom_toTopOf="@id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
+    <EditText
+        android:id="@+id/RedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:backgroundTint="#A31111"
+        android:textColor="#A31111"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/GreenPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:backgroundTint="#16A311"
+        android:textColor="#16A311"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
     <TextView
         android:id="@+id/textView7"
         android:layout_width="360dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:text="Repeat password"
+        android:text="@string/repeat_password"
         android:textAlignment="gravity"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/editTextTextPassword3"
+        app:layout_constraintBottom_toTopOf="@id/EditRepeatPassword3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/EditRepeatPassword3"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -113,19 +168,37 @@
         app:layout_constraintBottom_toTopOf="@id/textView8"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="289dp" />
+    <TextView
+        android:id="@+id/ErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:text="@string/please_check_your_password"
+        android:textColor="#F60505"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Your password should have a minimum of 8 characters and contain at least one number, one uppercase and one lower case letter.You can use special characters."
+        android:text="@string/password_criteria"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="344dp" />
+
+
+
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -145,7 +218,7 @@
         android:id="@+id/TextView9"
         android:layout_width="74dp"
         android:layout_height="38dp"
-        android:text="Next"
+        android:text="@string/next"
         android:textSize="24sp"
         android:textColor="@color/black"
         android:textAlignment="center"
